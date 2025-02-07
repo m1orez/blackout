@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgb(4, 19, 42);
+    background: -moz-radial-gradient(circle, rgba(4, 19, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(4, 19, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(4, 19, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04132a", endColorstr="#000000", GradientType=1);
+    overflow: hidden;
+}
+
+header img {    
+    display: block;
+    margin: auto;
+    width: 15%;
+    padding: 40px 0 0 0;
+}
+
+header #playerList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 110%;
+    text-align: center;
+}
+
+#playerList h2 {
+    margin-bottom: 10px;
+    font-size: 200%;
+}
+
+#players {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 15px 35px;
+    list-style: hidden;
+    padding: 0;
+}
+
+.playerPlaceholder {
+    color: rgba(25, 84, 135, 0.588);
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 110%;
+}
+
+header #addPlayerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+header input {
+    background-color: #00000000;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 110%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+header input:focus {
+    border: 1px solid rgb(223, 19, 19);
+    outline: none;
+}
+
+header button {
+    background-color: rgb(223, 19, 19);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 120%;
+    cursor: pointer;
+    padding: 7px 15px;
+    margin: 5px;
+}
