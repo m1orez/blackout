@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="setUpGame">
         <img src="./src/logo.png" alt="blackout logo" id="logo">
         <div id="playerList">
             <h2>Players</h2>
@@ -31,6 +31,14 @@
             <button id="startGame">Start Game</button>
         </div>
     </header>
+    <main id="playGame">
+        <img class="playingCard" id="whiteCard" src="./src/whiteCard.png" alt="white card">
+        <div id="taskCard">
+            <img class="playingCard" src="./src/blankCard.png" alt="blank card">
+            <p id="randomTask"></p>
+        </div>
+        <p id="playerTurn"></p>
+        <button id="nextPlayer">Next player</button>
+    </main>
 </body>
-
 </html>
